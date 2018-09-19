@@ -1,1 +1,2895 @@
-"Hello World" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="WordSection1">
+
+<h1><span class="SpellE"><span>Requirements</span></span><span> Specificatie</span></h1>
+
+<h2><span>Groep Info</span></h2>
+
+<p class="MsoNormal">Groep 7</p>
+
+<p class="MsoNormal">&#160;</p>
+
+<ul style="margin-top:0cm;" type="disc">
+ <li class="MsoNormal" style="color:black;vertical-align:baseline;"><span class="SpellE"><span style="font-family:Arial;">Belal</span></span><span style="font-family:Arial;"> <span class="SpellE">Mian</span> (4708857)</span></li>
+ <li class="MsoNormal" style="color:black;vertical-align:baseline;"><span class="SpellE"><span style="font-family:Arial;">Karan</span></span><span style="font-family:Arial;"> <span class="SpellE">Poeran</span> (4710541)</span></li>
+ <li class="MsoNormal" style="color:black;vertical-align:baseline;"><span style="font-family:Arial;">Raoul Rademaker
+     (4717287)</span></li>
+ <li class="MsoNormal" style="color:black;vertical-align:baseline;"><span style="font-family:Arial;">Bart van ’t Zet (4589599)</span></li>
+</ul>
+
+<h2><span class="SpellE"><span>Elicitatieproces</span></span><span></span></h2>
+
+<p class="MsoNormal"><span style="font-family:Times;color:black;">Tijdens het <span class="SpellE">elicitatieproces</span> hebben wij meerdere keren met de cli&#235;nt
+gesproken. We begonnen met een interview om erachter te komen wat precies het
+idee was van de cli&#235;nt en wat zij belangrijke eisen vonden voor het platform.
+Hier hebben we nog even met de cli&#235;nt gebrainstormd en daarna hebben wij de
+lijst met <span class="SpellE">requirements</span> geprobeerd zo goed mogelijk op
+te stellen. Toen dit eenmaal gedaan was hebben wij de lijst met <span class="SpellE">requirements</span> weer opgestuurd naar de cli&#235;nt en gevraagd of
+zij het er mee eens waren. Tot ons genoegen was de cli&#235;nt zeer te spreken over
+de opgestelde lijst met <span class="SpellE">requirements</span>.</span></p>
+
+<h2><span>Inleiding</span></h2>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">Carpool4Uni is
+een opkomend bedrijf in Nederland. Er is veel vraag en aanbod in de carpool
+sector. Dagelijks rijden duizenden studenten alleen in een auto, naar hun
+hogescholen of universiteiten toe. Ook duizenden andere studenten doen moeite
+om naar school te gaan door de fiets of het openbaar vervoer te gebruiken.</span></p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">Dit kan volgens
+ons een stuk makkelijker en milieuvriendelijk. Een carpoolservice zal er niet
+alleen voor zorgen dat studenten samen kunnen reizen en dat er hierdoor meer
+parkeerplaatsen vrij zijn op de bestemming. Daarnaast zorgt een vermindering
+van het aantal auto’s ervoor dat er minder broeikasgassen vrijkomen. </span></p>
+
+<p class="MsoNormal">&#160;</p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">Aangezien dit
+een nieuw bedrijf is, heeft het nog geen bestaand systeem en deze zullen dan
+ook allemaal in dit verslag ontwikkeld worden. Denk hierbij aan de databases,
+de interfaces voor de gebruikers en de administratieve structuren.</span></p>
+
+<p class="MsoNormal">&#160;</p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">In dit verslag
+zal het proces van de ontwikkeling van deze componenten beschreven worden.</span></p>
+
+<p>&#160;</p>
+
+<h2><span>Project Issues</span></h2>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">-Carpool4Uni zal
+op 1 januari 2019 online staan</span></p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">-Carpool4Uni zal
+te bereiken zijn via een website en/of app</span></p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">- Carpool4Uni
+zal klantgegevens op moeten slaan op een centrale database met eventuele
+back-up database</span></p>
+
+<p class="MsoNormal"><span style="font-family:Arial;color:black;">-Het budget
+waarmee Carpool4Uni start bedraagt €10.000</span></p>
+
+<p class="MsoNormal">&#160;</p>
+
+<h2><span>Randvoorwaarden</span></h2>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">Naast alle <span class="SpellE">requirements</span> zijn er ook
+randvoorwaarden, deze voorwaarden gaan over de globale eisen van het systeem en
+zullen nu behandeld worden.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">Ten eerste is het belangrijk om te weten wat de doelstelling is.
+De doelstelling van Carpool4Uni is natuurlijk om de reiservaring van studenten
+en universiteitsmedewerkers te verbeteren. Daarnaast is winst maken ook een
+belangrijke doelstelling, dit is te zien aan de 30% toeslag die per rit moet
+worden betaald aan Carpool4Uni ook is het belangrijk voor Carpool4Uni dat de
+omzet groeit. </span></p>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">De beoogde gebruikers van het platform zijn zoals eerder al
+vernoemd de studenten en de universiteitsmedewerkers, daarnaast zou het
+platform als het een succes is uit kunnen breiden naar eventueel bedrijven en
+of andere organisaties. </span></p>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">De beoogde effecten van het platform zijn dat dit ervoor moet
+zorgen dat het reizen naar de makkelijk moet worden gemaakt voor student en
+universiteitsmedewerkers. Daarnaast zorgt een Carpool service er ook voor dat
+het minder druk is qua auto’s op de universiteit en zullen zelfs de wegen
+rustiger zijn.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">Naast de student en de universiteitsmedewerkers zijn er ook nog
+een paar andere belanghebbende bij dit platform. Ten eerste is het ook gunstig
+voor de Universiteit zelf, want door de vermindering van auto’s zijn er ook
+minder parkeerplaatsen nodig op de universiteit en is het rustiger voor de
+studenten. Daarnaast is het voor omwonenden van de universiteit ook fijner als
+er minder auto’s zullen zijn want dit zorgt ervoor dat het rustiger is in de
+wijken die rondom de universiteit liggen en kunnen deze mensen dus rustiger
+wonen. Tenslotte heeft deze carpoolservice een positief effect op het milieu, want
+als er minder auto’s worden gebruikt worden er ook minder broeikasgassen
+uitgestoten en dit is goed voor het milieu.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:4.0pt;"><span style="font-family:Arial;color:black;">Tenslotte is de vorm van het systeem nog een belangrijk punt het
+systeem zal een soort vorm aannemen dat reizigers kunnen zoeken naar aanbieders,
+in dit geval de chauffeurs, die aan hun voorkeuren voldoen, als zij dan een
+aanbieder hebben gevonden kunnen ze deze een bericht sturen en als de aanbieder
+deze accepteert dan kunnen zij samen naar de Universiteit rijden. Hierdoor
+zullen minder mensen alleen hoeven te reizen en wordt het rustiger in het
+verkeer rondom de universiteit.</span></p>
+
+<p class="MsoNormal">&#160;</p>
+
+<h2><span class="SpellE"><span>Nonfunctionele</span></span><span> <span class="SpellE">Requirements</span></span></h2>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">01</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Gebruikersgegevens zijn priv&#233; en worden dus niet gedeeld of
+  verkocht aan derden</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Elke gebruiker van Carpool4Uni heeft recht op zijn/haar privacy.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td width="120" style="width:119.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Wanneer gebruikers de algemene voorwaarden hebben geaccepteerd</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">02</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">De app en website zullen beschermd zijn tegen hackers <span class="SpellE">d.m.v</span>, verschillende soorten beveiliging.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Hackers mogen geen gegevens inzien waar ze geen recht op hebben.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Bevestiging van beveiliging op de app en website</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">4</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">4</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gemiddeld</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">03</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Elke gebruiker van Carpool4Uni heeft een wachtwoord nodig om in
+  te kunnen loggen. </span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">D.m.v. een wachtwoord kunnen alleen de gebruikers van wie het
+  account is inloggen op het systeem.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Wanneer elke gebruiker een wachtwoord heeft gecre&#235;erd dat sterk
+  genoeg wordt bevonden. </span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">04</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">De app zal te gebruiken zijn op alle elektronische apparaten die
+  functioneren met IOS, Android en Windows</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Op elk soort apparaat met internetverbinding moet de app van
+  Carpool4Uni kunnen werken.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Wanneer de app te downloaden is op de verschillende
+  besturingssystemen</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">05</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Gebruikers van de app en/of de website moeten internetverbinding
+  hebben om de app te kunnen gebruiken.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Zonder internetverbinding is er geen mogelijkheid voor de
+  bestuurder en de passagier(s) om met elkaar te communiceren</span>.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Wanneer de gebruikers de app kunnen starten of de website te
+  zien krijgen.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">06</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">NF</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="3" style="width:2.5pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Voor gebruiksgemak kunnen de bestuurders en passagiers hun
+  GPS-locatie bekend maken.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Met een live-locatie is het makkelijker om een gemakkelijke
+  locatie af te spreken. </span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Wanneer de locatie van de gebruikers te zien is op de app en/of
+  website.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gemiddeld</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="158" style="width:157.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="465" colspan="4" style="width:464.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+</table>
+
+<h2><span class="SpellE"><span>Funtionele</span></span><span> <span class="SpellE">Requirements</span></span></h2>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">01</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">De gebruiker registreert zichzelf of hij een chauffeur of
+  passagier is.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Dit is een erg noodzakelijke eerste stap, waarbij de gebruiker
+  zijn gegevens invoert.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Carpool4Uni</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Als de gebruiker succesvol geregistreerd is.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog noodzakelijk</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="5" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">02</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker geeft aan of hij docent of student is.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan het systeem met deze informatie links maken.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gebruiker</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de gebruiker zijn gegevens heeft in gevoerd.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">4</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">03</p>
+  </td>
+  <td width="117" colspan="3" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" colspan="3" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker geeft aan of hij of zij graag rookt in de
+  auto.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan het systeem met deze informatie links maken.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gebruiker</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de gebruiker zijn gegevens heeft in gevoerd.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="4" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="4" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="4" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="4" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="10" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">01</p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td colspan="3" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;"></td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">De chauffeur geeft aan hoeveel mensen in zijn auto kunnen, tot
+  maximaal 3.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Nu kan het systeem bepalen hoe veel passagiers gelinkt kunnen
+  worden</span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">aan deze bestuurder.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Chauffeur</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Als de chauffeur succesvol zijn of haar beschikbaarheid heeft
+  ingevoerd.</span></p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td colspan="3" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td colspan="4" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td colspan="3" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td colspan="2" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="4" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="9" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="35"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ 
+ <tr>
+  <td width="122" style="border:none;"></td>
+  <td width="15" style="border:none;"></td>
+  <td width="2" style="border:none;"></td>
+  <td width="118" style="border:none;"></td>
+  <td width="2" style="border:none;"></td>
+  <td width="135" style="border:none;"></td>
+  <td width="83" style="border:none;"></td>
+  <td width="59" style="border:none;"></td>
+  <td width="2" style="border:none;"></td>
+  <td width="6" style="border:none;"></td>
+  <td width="84" style="border:none;"></td>
+ </tr>
+ 
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong><b></b></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">04</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong><b></b></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="241" colspan="3" style="width:240.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong><b></b></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker verteld wat voor soort auto hij of zij heeft
+  of wat voor soort auto hij of zij zou willen.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan het systeem met deze informatie links maken.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gebruiker</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de gebruiker zijn gegevens heeft in gevoerd.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gemiddeld</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">02</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="90" style="width:89.8pt;padding:.75pt .75pt .75pt .75pt;"></td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De chauffeur geeft aan hoeveel rij ervaring hij of zij
+  heeft</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan met deze informatie links gemaakt worden.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeurs</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de chauffeur zijn of haar info heeft ingevoerd.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Gemiddeld</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="444" colspan="5" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="95" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">05 </p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="241" colspan="3" style="width:240.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">De gebruiker geeft zijn of haar locatie aan.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Nu kan met deze informatie links gemaakt worden. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Gebruikers</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span style="font-size:11.0pt;font-family:Arial;color:black;">Als de gebruiker zijn of haar locatievoorziening heeft aan
+  gegeven.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="244" colspan="4" style="width:243.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="244" colspan="4" style="width:243.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app, navigatie</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="122" style="border:none;"></td>
+  <td width="15" style="border:none;"></td>
+  <td width="118" style="border:none;"></td>
+  <td width="163" style="border:none;"></td>
+  <td width="58" style="border:none;"></td>
+  <td width="91" style="border:none;"></td>
+  <td width="93" style="border:none;"></td>
+  <td width="4" style="border:none;"></td>
+ </tr>
+ 
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong><b></b></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">01</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong><b></b></p>
+  </td>
+  <td width="154" style="width:154.45pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-P</p>
+  </td>
+  <td width="140" colspan="3" style="width:140.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong><b></b></p>
+  </td>
+  <td width="32" colspan="4" style="width:31.6pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De passagier geeft aan waar hij of zij naar toe wilt</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zo kan het systeem een weg langs de afzetplaats maken</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Passagier en Carpool4Uni.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zodra de passagier zijn of haar afzetplaats heeft
+  opgegeven</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="3" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="3" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">03</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="154" style="width:154.45pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="140" colspan="3" style="width:140.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="32" colspan="4" style="width:31.6pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker geeft aan hoeveel bagage ruimte hij of zij
+  (nodig) heeft</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan het systeem kijken of de chauffeur genoeg ruimte in
+  zijn of haar auto heeft.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeur, passagier en Carpool4Uni.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zodra de gebruiker zijn of haar hoeveelheid bagage ruimte
+  op heeft gegeven.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td width="154" style="width:154.45pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="140" colspan="3" style="width:140.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">4</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="154" style="width:154.45pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="140" colspan="3" style="width:140.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="430" colspan="6" style="width:429.6pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="32" colspan="4"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">04</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="90" colspan="2" style="width:89.8pt;padding:.75pt .75pt .75pt .75pt;"></td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De route van de chauffeur bepaalt de prijs van de route
+  per kilometer.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zo weet de passagier wat hij of zij moet betalen.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeurs, passagiers en Carpool4Uni.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de passagier zijn of haar rit heeft gekozen.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="3" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="3" style="width:147.3pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="444" colspan="7" style="width:443.75pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="3"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">06</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="91" colspan="4" style="width:91.3pt;padding:.75pt .75pt .75pt .75pt;"></td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app laat de prijzen zien aan de klanten met een 30%
+  toename.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Deze 30% is voor Carpool4Uni</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zodra de prijs in de app staat</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="149" colspan="5" style="width:148.8pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="149" colspan="5" style="width:148.8pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>&#160;</strong></p>
+  </td>
+  <td width="445" colspan="9" style="width:445.25pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">&#160;</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="16"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">05</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="91" colspan="3" style="width:90.55pt;padding:.75pt .75pt .75pt .75pt;"></td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De chauffeur bepaalt zijn of haar route prijs.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zo kan de passagier bepalen of hij of zij de prijs goed
+  vindt</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeurs, passagiers en Carpool4Uni.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de passagier zijn of haar rit heeft gekozen.</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="148" colspan="4" style="width:148.05pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" colspan="2" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="148" colspan="4" style="width:148.05pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="445" colspan="8" style="width:444.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+  <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="17" colspan="2"><p class="MsoNormal">&#160;</p></td>
+ </tr>
+ 
+ <tr>
+  <td width="122" style="border:none;"></td>
+  <td width="15" style="border:none;"></td>
+  <td width="118" style="border:none;"></td>
+  <td width="156" style="border:none;"></td>
+  <td width="7" style="border:none;"></td>
+  <td width="58" style="border:none;"></td>
+  <td width="77" style="border:none;"></td>
+  <td width="14" style="border:none;"></td>
+  <td width="2" style="border:none;"></td>
+  <td width="2" style="border:none;"></td>
+  <td width="18" style="border:none;"></td>
+ </tr>
+ 
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">06</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De chauffeur bepaalt zijn tijd en route met behulp van
+  navigatie.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zo kunnen passagier gelinkt worden aan chauffeurs in hun
+  buurt en rond dezelfde tijd.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeurs, passagiers en Carpool4Uni.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de passagier zijn of haar rit heeft gekozen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app, navigatie</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">02</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-P</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De passagier kan verschillende ritten met verschillende
+  prijzen zien.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zo kan de passagier zijn of haar voorkeur bepalen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Chauffeur en Carpool4Uni.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zodra de passagier zijn of haar rit heeft gekozen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">03</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-P</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De passagier krijgt te zien hoe laat en waar hij of zij
+  wordt opgehaald.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan de passagier precies weten waar en hoe laat zij
+  wordt opgehaald.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Wanneer de passagier is opgehaald.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Noodzakelijk</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app, navigatie</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">07</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker is in staat op ieder moment zijn profiel gegevens
+  te veranderen</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Dit is zodat als er bij de gebruiker voorkeuren of
+  mogelijkheden veranderen, deze zijn of haar profiel kan veranderen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">-</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">08</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De gebruiker is in staat uit te loggen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Zodat de gebruiker kan uit loggen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de gebruiker in staat is uit te loggen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">07</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F-C</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Handsfree app voor chauffeurs</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Nu kan de chauffeur hands free de app gebruiken en
+  overtreed hiermee geen wetten.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Als de hands free versie beschikbaar is.</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">5</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Hoog</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0">
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  #:</strong></p>
+  </td>
+  <td width="14" style="width:13.5pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">09</p>
+  </td>
+  <td width="117" style="width:116.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Requirement</strong></span><strong>
+  type:</strong></p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">F</p>
+  </td>
+  <td width="56" style="width:56.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Event/<span class="SpellE">Use</span> Case #:</strong></p>
+  </td>
+  <td width="89" style="width:89.05pt;padding:.75pt .75pt .75pt .75pt;"></td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Description</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Premium modus maken</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Rationale:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Premium members hebben voordelen</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Originator</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Carpool4Uni</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Fit <span class="SpellE">Criterion</span>:</strong></p>
+  </td>https://avatars0.githubusercontent.com/u/43403380?s=40&v=4
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Wanneer er premium modus beschikbaar is</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Satisfaction</span>:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">3</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Customer <span class="SpellE">Dissatisfaction</span>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">2</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><strong>Priority:</strong></p>
+  </td>
+  <td width="132" colspan="2" style="width:131.9pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">Laag</p>
+  </td>
+  <td width="162" style="width:161.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Conflicts</strong></span><strong>:</strong></p>
+  </td>
+  <td width="147" colspan="2" style="width:146.55pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>Supporting</strong></span><strong>
+  <span class="SpellE">Materials</span>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">De app</p>
+  </td>
+ </tr>
+ <tr>
+  <td style="padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal"><span class="SpellE"><strong>History</strong></span><strong>:</strong></p>
+  </td>
+  <td width="443" colspan="5" style="width:443.0pt;padding:.75pt .75pt .75pt .75pt;">
+  <p class="MsoNormal">...</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&#160;</p>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.8.4.12536-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
